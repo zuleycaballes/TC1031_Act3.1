@@ -48,8 +48,6 @@ void Nodo::setDato(int _dato){
 // Destructor de la clase Nodo
 Nodo::~Nodo(){}
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 // Constructor de la clase Arbol
 Arbol::Arbol(){
     raiz = nullptr;
@@ -57,8 +55,8 @@ Arbol::Arbol(){
 
 // Complejidad del peor caso: O(n) 
 // Donde n es la altura del árbol.
-/* En el peor caso, el árbol está completamente desbalanceado (lista ligada), 
-   lo que significa que n puede ser igual al número de nodos. */
+// En el peor caso, el árbol está completamente desbalanceado (lista ligada), 
+// lo que significa que n puede ser igual al número de nodos.
 // Método para insertar un nodo en el árbol
 Nodo* Arbol::insertarNodo(Nodo *r, int d){
     if (r == nullptr) {
